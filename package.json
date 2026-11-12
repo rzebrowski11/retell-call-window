@@ -1,0 +1,14 @@
+{
+  "name": "retell-call-window",
+  "version": "1.0.0",
+  "description": "Retell inbound call webhook for SCS: open / after-hours / holiday greeting",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

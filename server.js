@@ -112,15 +112,15 @@ function callWindow(at = new Date()) {
     window = 'business_hours';
     greeting = `Thanks for calling ${COMPANY}. Our team is helping other customers right now, ` +
       `but I'm SCS's automated assistant, and I can take your information so the right person ` +
-      `gets back to you as soon as they're off the phone.`;
+      `gets back to you as soon as they're off the phone. How can I help you today?`;
   } else if (holidayName) {
     window = 'holiday';
     greeting = `Thanks for calling ${COMPANY}. Our office is closed today for ${holidayName}, ` +
-      `but I'm SCS's automated assistant. I can take a message, and the team will get back to you ${nextOpenPhrase}.`;
+      `but I'm SCS's automated assistant. I can take a message, and the team will get back to you ${nextOpenPhrase}. How can I help you today?`;
   } else {
     window = 'after_hours';
     greeting = `Thanks for calling ${COMPANY}. Our office is closed right now, ` +
-      `but I'm SCS's automated assistant. I can take a message, and the team will get back to you ${nextOpenPhrase}.`;
+      `but I'm SCS's automated assistant. I can take a message, and the team will get back to you ${nextOpenPhrase}. How can I help you today?`;
   }
 
   // Retell requires every dynamic variable value to be a string.
